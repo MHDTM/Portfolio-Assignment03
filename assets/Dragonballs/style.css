@@ -1,0 +1,57 @@
+body {
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  overflow: auto;         /* This hides scrollbars */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;    
+}
+
+.row {
+  display: flex;
+}
+
+.pixel {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #111;
+}
+
+.orange {
+  background-color: #ff9900;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.white {
+  background-color: #ffffff;
+}
+
+.bg {
+  background-color: transparent;
+}
+
+.clock {/* Used to set up the 7 dragon balls in a circle with the 7th dragon ball in the center*/
+  position: relative;
+  width: 1600px;
+  height: 1600px;
+  margin: 00px auto;
+}
+
+.dragonball {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+}
+
+.ball1 { top: 8%; left: 56%; }   /* 1 o'clock */
+.ball2 { top: 35%; left: 68%; }  /* 4 o'clock */
+.ball3 { top: 62%; left: 56%; }  /* 6 o'clock */
+.ball4 { top: 62%; left: 25%; }  /* 8 o'clock */
+.ball5 { top: 35%; left: 12%; }   /* 10 o'clock */
+.ball6 { top: 8%; left: 28%; }  /* 11 o'clock */
+.ball7 { top: 35%; left: 40%; }  /* center */

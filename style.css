@@ -1,0 +1,107 @@
+/* General Reset & Typography */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fdfdfd;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-color: #333;
+}
+
+body.dark-mode .navbar {
+  background-color: #1e1e1e !important;
+}
+
+body.dark-mode footer {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode section,
+body.dark-mode .container {
+  background-color: #121212 !important;
+}
+
+body.dark-mode .bg-light {
+  background-color: #121212 !important;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+
+
+/* Hero Section */
+header {
+  background-image: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+}
+
+/* Section Styling */
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
+
+/* Project Cards */
+.card {
+  margin-bottom: 20px;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+#backToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 9999;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#backToTopBtn:hover {
+  background-color: #0056b3;
+}
