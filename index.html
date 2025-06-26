@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Game Dev Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1>Hello, I'm a <span id="typed-text"></span></h1>
+      <p>Welcome to my game dev portfolio</p>
+      <button onclick="toggleDarkMode()" class="btn btn-secondary m-3">
+  Toggle Dark Mode
+</button>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a passionate game developer who loves creating experiences using Unity, HTML, and JavaScript.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5 bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Infinite Platformer Game</h5>
+          <p class="card-text">A simple infinite side-scroller inspired by the Chrome Dino Game.</p>
+          <a href="assets/sidescroller/Index.html" class="btn btn-primary" target="_blank">Play Game</a>
+        </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Generated Image Of Dragon Balls</h5>
+          <p class="card-text">A simple image of the seven dragon balls from dragon ball z made from using css.</p>
+          <a href="assets/Dragonballs/index.html" class="btn btn-primary" target="_blank">Open Image</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: Example@gmail.com (Placeholder)</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">&copy; 2025 My Portfolio</div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- GSAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+
+  <script>
+    AOS.init();
+
+    var typed = new Typed("#typed-text", {
+      strings: ["Game Developer", "Level Designer", "Pixel Artist"],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true
+    });
+
+    gsap.from("h2", { duration: 1, y: -50, opacity: 0, stagger: 0.3 });
+  </script>
+
+<!-- Scroll to Top Button -->
+<button id="backToTopBtn" onclick="scrollToTop()" title="Go to top">
+  ↑
+</button>
+</body>
+</html>
